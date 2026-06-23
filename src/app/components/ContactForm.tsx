@@ -16,16 +16,31 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("loading");
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/ilanit00777@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone || "לא צוין",
+          message: form.message,
+          _subject: `פנייה חדשה מהאתר - ${form.name}`,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
 
-    if (res.ok) {
-      setStatus("success");
-      setForm({ name: "", phone: "", message: "" });
-    } else {
+      const data = await res.json();
+      if (data.success === "true" || data.success === true) {
+        setStatus("success");
+        setForm({ name: "", phone: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
       setStatus("error");
     }
   }
