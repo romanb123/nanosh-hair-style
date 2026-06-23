@@ -459,6 +459,89 @@ footer {
   opacity: 0.45;
 }
 
+/* ── Contact Form ── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+}
+
+.field-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(200,169,126,0.3);
+  color: var(--cream);
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  padding: 0.6rem 0;
+  outline: none;
+  transition: border-color 0.25s;
+  width: 100%;
+}
+
+.field-input::placeholder { color: rgba(178,164,152,0.4); }
+.field-input:focus { border-bottom-color: var(--gold); }
+.field-input:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.field-textarea {
+  resize: none;
+  line-height: 1.7;
+}
+
+.form-submit {
+  align-self: flex-start;
+  padding: 0.85rem 2.5rem;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+  font-family: 'Rubik', Arial, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.form-submit:hover:not(:disabled) { background: var(--gold); color: var(--ink); }
+.form-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.form-feedback {
+  font-size: 0.85rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2px;
+}
+
+.form-success {
+  background: rgba(200,169,126,0.1);
+  border: 1px solid rgba(200,169,126,0.3);
+  color: var(--gold-light);
+}
+
+.form-error {
+  background: rgba(155,94,122,0.1);
+  border: 1px solid rgba(155,94,122,0.3);
+  color: #d48fa8;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   nav { padding: 1rem 1.5rem; }

@@ -1,4 +1,5 @@
 import Logo from "./components/Logo";
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -190,30 +191,32 @@ export default function Home() {
               רוצה לשמוע עוד על המוצרים שלנו, לקבוע פגישת ייעוץ,
               או פשוט לשאול שאלה? אנחנו כאן בשבילך.
             </p>
+
+            <div className="contact-items" style={{ marginTop: "2.5rem" }}>
+              <div className="contact-item">
+                <div className="ci-label">אימייל</div>
+                <div className="ci-value">
+                  <a href="mailto:ilanit00777@gmail.com">ilanit00777@gmail.com</a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <div className="ci-label">טלפון</div>
+                <div className="ci-value">
+                  <a href="tel:9997777000">999-7777-000</a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <div className="ci-label">מיקום</div>
+                <div className="ci-value">תל אביב, ישראל</div>
+              </div>
+              <div className="contact-item">
+                <div className="ci-label">שעות פעילות</div>
+                <div className="ci-value">ראשון–שישי, 08:00–19:00</div>
+              </div>
+            </div>
           </div>
 
-          <div className="contact-items">
-            <div className="contact-item">
-              <div className="ci-label">אימייל</div>
-              <div className="ci-value">
-                <a href="mailto:ilanit00777@gmail.com">ilanit00777@gmail.com</a>
-              </div>
-            </div>
-            <div className="contact-item">
-              <div className="ci-label">טלפון</div>
-              <div className="ci-value">
-                <a href="tel:9997777000">999-7777-000</a>
-              </div>
-            </div>
-            <div className="contact-item">
-              <div className="ci-label">מיקום</div>
-              <div className="ci-value">תל אביב, ישראל</div>
-            </div>
-            <div className="contact-item">
-              <div className="ci-label">שעות פעילות</div>
-              <div className="ci-value">ראשון–שישי, 08:00–19:00</div>
-            </div>
-          </div>
+          <ContactForm />
         </div>
       </section>
 
