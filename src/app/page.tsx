@@ -1,20 +1,11 @@
 import Logo from "./components/Logo";
 import ContactForm from "./components/ContactForm";
+import Nav from "./components/Nav";
 
 export default function Home() {
   return (
     <>
-      {/* Navigation */}
-      <nav>
-        <a href="#" className="nav-logo" aria-label="Nanosh Hair Style">
-          <Logo size={36} variant="full" />
-        </a>
-        <ul className="nav-links">
-          <li><a href="#about">אודות</a></li>
-          <li><a href="#products">חנות</a></li>
-          <li><a href="#contact">צור קשר</a></li>
-        </ul>
-      </nav>
+      <Nav />
 
       {/* Hero */}
       <section className="hero">
