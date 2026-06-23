@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Accessibility from "./components/Accessibility";
 
 const siteUrl = "https://master.d1qv0srh4ln6z3.amplifyapp.com";
 
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Accessibility />
+      </body>
     </html>
   );
 }
