@@ -9,7 +9,14 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero">
-        <div className="hero-bg" />
+        <div className="hero-bg">
+          <img
+            src="/images/ayo-ogunseinde-UqT55tGBqzI-unsplash.jpg"
+            alt=""
+            aria-hidden="true"
+            className="hero-bg-img"
+          />
+        </div>
 
         {/* Flowing hair strand SVG — the signature element */}
         <svg
@@ -75,7 +82,14 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about">
+      <section id="about" className="about-outer">
+        <div className="about-image-col">
+          <img
+            src="/images/pexels-artbovich-7750124.jpg"
+            alt="סלון Nanosh Hair Style"
+            className="about-photo"
+          />
+        </div>
         <div className="about-section">
           <div className="about-deco" aria-hidden="true">N</div>
           <div>
@@ -120,12 +134,7 @@ export default function Home() {
             {/* Card 1 */}
             <div className="product-card">
               <div className="product-img">
-                <svg width="80" height="120" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="product-icon">
-                  <path d="M40 10 C20 10 10 30 12 55 C14 80 25 100 40 110 C55 100 66 80 68 55 C70 30 60 10 40 10Z" stroke="#C8A97E" strokeWidth="1.5" fill="none"/>
-                  <path d="M40 10 C38 30 30 50 28 75" stroke="#C8A97E" strokeWidth="1" strokeOpacity="0.6" fill="none"/>
-                  <path d="M40 10 C42 30 50 50 52 75" stroke="#C8A97E" strokeWidth="1" strokeOpacity="0.6" fill="none"/>
-                  <path d="M15 45 C25 43 35 48 45 43 C55 38 65 42 68 45" stroke="#C8A97E" strokeWidth="0.8" strokeOpacity="0.4" fill="none"/>
-                </svg>
+                <img src="/images/alexas_fotos-mannequins-1079925_1920.jpg" alt="תוספות שיער טבעי" className="product-photo" />
               </div>
               <div className="product-info">
                 <div className="product-name">תוספות שיער טבעי</div>
@@ -137,12 +146,7 @@ export default function Home() {
             <div className="product-card">
               <div className="product-img">
                 <span className="product-badge">חדש</span>
-                <svg width="80" height="120" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="product-icon">
-                  <ellipse cx="40" cy="35" rx="22" ry="25" stroke="#C8A97E" strokeWidth="1.5" fill="none"/>
-                  <path d="M18 35 C16 65 22 95 40 110 C58 95 64 65 62 35" stroke="#C8A97E" strokeWidth="1.2" fill="none"/>
-                  <path d="M40 60 C32 65 28 80 30 95" stroke="#C8A97E" strokeWidth="0.8" strokeOpacity="0.5" fill="none"/>
-                  <path d="M40 60 C48 65 52 80 50 95" stroke="#C8A97E" strokeWidth="0.8" strokeOpacity="0.5" fill="none"/>
-                </svg>
+                <img src="/images/freestocks-rNPfyRYqjHY-unsplash.jpg" alt="פאה שוודית יוקרתית" className="product-photo" />
               </div>
               <div className="product-info">
                 <div className="product-name">פאה שוודית יוקרתית</div>
@@ -154,12 +158,7 @@ export default function Home() {
             <div className="product-card">
               <div className="product-img">
                 <span className="product-badge">חדש</span>
-                <svg width="80" height="120" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="product-icon">
-                  <path d="M40 8 C38 20 36 32 38 44 C40 56 42 68 40 80 C38 92 34 104 36 116" stroke="#C8A97E" strokeWidth="1.5" fill="none"/>
-                  <path d="M40 8 C32 14 28 22 32 32 C36 42 44 48 40 58 C36 68 28 74 32 84 C36 94 44 100 40 110" stroke="#C8A97E" strokeWidth="1" strokeOpacity="0.6" fill="none"/>
-                  <path d="M40 8 C48 14 52 22 48 32 C44 42 36 48 40 58 C44 68 52 74 48 84 C44 94 36 100 40 110" stroke="#C8A97E" strokeWidth="1" strokeOpacity="0.6" fill="none"/>
-                  <path d="M25 20 C30 25 35 22 40 26 C45 30 50 27 55 32" stroke="#C8A97E" strokeWidth="0.7" strokeOpacity="0.4" fill="none"/>
-                </svg>
+                <img src="/images/pexels-ian-1905462846-36785429.jpg" alt="פאה עם תסרוקת קלועה" className="product-photo" />
               </div>
               <div className="product-info">
                 <div className="product-name">פאה עם תסרוקת קלועה</div>
